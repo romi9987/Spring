@@ -20,15 +20,17 @@ public class SpringStockMvcSec2Application implements CommandLineRunner{
 	
 	@Override
 	public void run(String...args) throws Exception {
-		articleRepository.save(new Article(null, "Samsung S9", 350));
-		articleRepository.save(new Article(null, "Samsung S10", 500));
-		articleRepository.save(new Article(null, "Huawei X4", 400));
-		articleRepository.save(new Article(null, "Samsung S8", 250));
-		articleRepository.save(new Article(null, "Samsung Galaxy Tab", 450));
-		articleRepository.save(new Article(null, "Apple 11", 600));
-		articleRepository.save(new Article(null, "Apple Ipad", 350));
-		articleRepository.save(new Article(null, "Lenovo T430", 300));
-		articleRepository.save(new Article(null, "HP ProBook", 350));
+//		articleRepository.save(new Article(null, "Samsung S9", 350));
+//		articleRepository.save(new Article(null, "Samsung S10", 500));
+//		articleRepository.save(new Article(null, "Huawei X4", 400));
+//		articleRepository.save(new Article(null, "Samsung S8", 250));
+//		articleRepository.save(new Article(null, "Samsung Galaxy Tab", 450));
+//		articleRepository.save(new Article(null, "Apple 11", 600));
+//		articleRepository.save(new Article(null, "Apple Ipad", 350));
+//		articleRepository.save(new Article(null, "Lenovo T430", 300));
+//		articleRepository.save(new Article(null, "HP ProBook", 350));
+		
+		articleRepository.findAll().forEach(a -> System.out.println(a));
 	}
 
 }
