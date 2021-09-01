@@ -28,7 +28,7 @@ public class ArticleController {
 		@GetMapping("/index")
 		public String index(Model model, @RequestParam(name="page", defaultValue="0") int page,
 										@RequestParam(name="keyword", defaultValue="") String kw) {
-			Page<Article> articles = articleRepository.findByDescriptionContains(kw, PageRequest.of(page, 5));
+			Page<Article> articles = articleRepository.findByDescriptionContains(kw, PageRequest.of(page, 4));
 			model.addAttribute("listArticle", articles.getContent());
 			model.addAttribute("pages", new int[articles.getTotalPages()]);
 			model.addAttribute("currentPage", page);
