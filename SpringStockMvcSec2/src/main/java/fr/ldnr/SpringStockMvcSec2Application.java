@@ -30,7 +30,7 @@ public class SpringStockMvcSec2Application implements CommandLineRunner{
 //		articleRepository.save(new Article(null, "Lenovo T430", 300));
 //		articleRepository.save(new Article(null, "HP ProBook", 350));
 		
-		articleRepository.findAll().forEach(a -> System.out.println(a));
+//		articleRepository.findAll().forEach(a -> System.out.println(a));
 	}
 
 }
